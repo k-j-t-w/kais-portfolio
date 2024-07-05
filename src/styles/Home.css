@@ -1,0 +1,110 @@
+.home-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1300px;
+  flex-grow: 1;
+}
+
+.home-blurb {
+  font-size: 60px;
+  margin-block: 20px;
+  padding: 20px;
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-blurb {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home-blurb {
+    font-size: 35px;
+  }
+}
+
+
+.home-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  padding-bottom: 20px;
+
+}
+
+.social {
+  background-color: rgb(36, 36, 36);
+  border-radius: 5px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  margin: 5px;
+}
+
+
+
+/* Text Animation */
+.home-blurb .type {
+  padding: 2rem 1rem;
+  width: auto;
+  margin: auto;
+}
+
+.blurb1,
+.blurb2,
+.blurb3,
+.blurb4 {
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  visibility: hidden;
+  animation: show 0s forwards, typing 0.5s steps(20, end) forwards, fadein 1s forwards;
+}
+
+.blurb2 {
+  animation-delay: 0.2s, 0.2s, 0.2s;
+}
+
+.blurb3 {
+  animation-delay: 0.6s, 0.6s, 0.6s;
+}
+
+.blurb4 {
+  animation-delay: 0.9s, 0.9s, 0.9s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes show {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Text Animation End*/

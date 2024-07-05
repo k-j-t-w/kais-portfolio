@@ -1,0 +1,14 @@
+html, body, p {
+
+  padding: 0;
+  
+  margin: 0;
+  font-family: 'karla';
+  font-weight: 300;
+  color: #fffcec;
+  }
+  
+
+  html {
+    background-color: rgb(29, 29, 29);
+  }

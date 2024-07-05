@@ -1,0 +1,43 @@
+.top-nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: -50px;
+}
+
+.top-nav-span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px;
+  max-width: 1300px;
+  flex-grow: 1;
+
+}
+
+.top-nav-items {
+  display: flex;
+
+}
+
+.top-nav-item {
+  padding: 10px;
+  transition: 0.2s;
+  border-radius: 5px;
+  position: static;
+  font-size: 16px; 
+  cursor: pointer;
+  
+}
+
+.top-nav-item:hover {
+  background-color: rgb(60, 71, 87);
+  transform: scale(1.1);
+}
+.top-nav-item {
+  display: inline-block; /* Ensure inline-block for consistent width */
+  width: 60px; /* Adjust width as needed */
+  text-align: center; /* Center align text */
+  line-height: 20px; 
+}
