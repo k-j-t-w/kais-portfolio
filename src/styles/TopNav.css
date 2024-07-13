@@ -48,3 +48,7 @@
   text-align: center; /* Center align text */
   line-height: 20px; 
 }
+
+.link {
+  color: #fffcec;
+}

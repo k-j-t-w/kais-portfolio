@@ -1,6 +1,8 @@
 .home-cont {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .home {
@@ -14,7 +16,8 @@
 
 .home-blurb {
   font-size: 60px;
-  margin-block: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: rgb(36, 36, 36);
   border-radius: 10px;
@@ -38,7 +41,7 @@
   justify-content: space-between;
   width: 250px;
   padding-bottom: 20px;
-
+  margin-bottom: 150px;
 }
 
 .social {
@@ -52,7 +55,60 @@
 .about-para {
   padding-block: 10px;
   font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 150%;
 }
+
+.about-cont {
+  margin-bottom: 150px;
+}
+
+.skills {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 150px;
+}
+
+.skill {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  width: 90px
+}
+
+.icon {
+  width: 70px; /* Set the width */
+  height: 70px; /* Set the height */
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(46, 46, 46);
+  justify-content: center;
+  padding-block: 15px;
+  letter-spacing: 0.8px;
+
+  width: 100%;
+}
+
+#work {
+  scroll-margin-top: 80px;
+}
+
+#about {
+  scroll-margin-top: 80px;
+}
+
+#contact {
+  scroll-margin-top: 80px;
+}
+
+#skills {
+  scroll-margin-top: 80px;
+}
+
 
 
 /* Text Animation */

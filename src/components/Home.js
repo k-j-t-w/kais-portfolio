@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css'
 import Projects from './Projects';
+import StackIcon from "tech-stack-icons";
 
 function Home({}) {
 
@@ -20,19 +21,78 @@ function Home({}) {
             <div className='social'>Linkedin</div>
             <div className='social'>Email</div>
           </div>
-          <h2 id='work'>Work.</h2>
+          <h2 id='work'>Works</h2>
           <Projects/>
-          <h2 id='about'>About.</h2>
-          <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. From early beginnings, I've been immersed in the world behind screens, meticulously deconstructing designs and websites to uncover their craftsmanship.</div>
-          <div className='about-para'>My journey started as a freelance web designer and developer while pursuing my education. Over time, this evolved into a deep-seated passion for creating impactful digital solutions. I thrive on the challenge of blending creativity with technical expertise, crafting seamless and innovative user experiences.</div>
-          <div className='about-para'>For the past years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
-          <h2 id='contact'>Get in touch</h2>
+          <div className='about-cont'>
+            <h2 id='about'>About</h2>
+            <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. From early beginnings, I've been immersed in the world behind screens, meticulously deconstructing designs and websites to uncover their craftsmanship.</div>
+            <div className='about-para'>For the past couple years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
+            <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games (such as elden ring and Valorant) or creating something (paintings, models, crafts, sculptures).</div>
+          </div>
+          <h2 id='skills'>Skills</h2>
+          <div className='skills'>
+            <div className='skill'>
+              <StackIcon name="reactjs" className="icon"/>
+              <h3>React</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="nodejs" className="icon"/>
+              <h3>Node.js</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="js" className="icon"/>
+              <h3>Javascript</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="postgresql" className="icon"/>
+              <h3>PostgreSQL</h3>
+            </div>
+            <div className='skill'>
+            <StackIcon name="git" className="icon"/>
+              <h3>Git</h3>
+            </div>
+            <div className='skill'>
+            <StackIcon name="tailwindcss" className='icon'/>
+              <h3>TailwindCSS</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="openai" className="icon"/>
+              <h3>OpenAi</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="npm" className="icon"/>
+              <h3>npm</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="ps" className="icon"/>
+              <h3>Photoshop</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="ruby" className="icon"/>
+              <h3>Ruby</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="id" className="icon"/>
+              <h3>Indesign</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="figma" className="icon"/>
+              <h3>Figma</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="ai" className="icon"/>
+              <h3>Illustrator</h3>
+            </div>
+          </div>
+          <h2 id='contact'>Contact Me</h2>
+          <div>Feel free to contact me if you have any questions about me or my projects!</div>
           <div className='home-socials'>
             <div className='social'>Github</div>
             <div className='social'>Linkedin</div>
             <div className='social'>Email</div>
           </div>
       </div>
+          <div className='footer'> Developed by Kai Wingfield 2024</div>
     </div>
   )
 }
