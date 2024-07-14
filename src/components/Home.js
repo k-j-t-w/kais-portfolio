@@ -23,7 +23,7 @@ function FadeInSection(props) {
   );
 }
 
-function Home({}) {
+function Home({ openModal }) {
 
   return (
     <div className='home-cont'>
@@ -49,7 +49,7 @@ function Home({}) {
           </div>
           <FadeInSection>
           <h2 id='work'>Works</h2>
-          <Projects/>
+          <Projects openModal={openModal}/>
           </FadeInSection>
           <FadeInSection>
           <div className='about-cont'>
@@ -128,10 +128,10 @@ function Home({}) {
             <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
               <div className='social'>Github</div>
             </a>
-            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+            <a href="www.linkedin.com/in/kai-wingfield" target="_blank" rel="noopener noreferrer" className='link'>
               <div className='social'>Linkedin</div>
             </a>
-            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+            <a href="mailto:kaiwingfield17@gmail.com" target="_blank" rel="noopener noreferrer" className='link'>
               <div className='social'>Email</div>
             </a>
           </div>

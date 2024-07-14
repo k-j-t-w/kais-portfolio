@@ -1,7 +1,14 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
 import design from '../images/DowntimeTea2.jpg'
+
+
+const dummy = () => {
+  return (
+    <div>Testing the modal</div>
+  )
+}
 
 const Tilt = ({ children }) => {
   const tiltRef = useRef(null);
@@ -52,11 +59,13 @@ const Tilt = ({ children }) => {
   );
 };
 
-const Projects = () => {
+const Projects = ({ openModal }) => {
+
   return (
     <div className="projects-cont">
+
       <Tilt>
-        <div className="project-content">
+        <div className="project-content" onClick={() => openModal(dummy)} >
           <img src={gunner} alt="Painting" className="project-img" />
           <h1 className="project-title">Title</h1>
           <div className="project-description">Description</div>
