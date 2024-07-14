@@ -5,6 +5,24 @@
   align-items: center;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translatex(-30vw);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 1000ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -16,7 +34,7 @@
 
 .home-blurb {
   font-size: 60px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 20px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -44,6 +62,7 @@
   padding-bottom: 20px;
   margin-bottom: 150px;
   
+  
 }
 
 .social {
@@ -53,6 +72,13 @@
   margin: 5px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(27, 27, 27) ;
+  transition: 0.2s;
+}
+
+.social:hover {
+
+  background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 .about-para {
@@ -64,6 +90,22 @@
 
 .about-cont {
   margin-bottom: 150px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+
+}
+.portrait {
+ display: flex;
+ border-radius: 10px;
+
+ width: 26%;
+ padding-right: 40px;
+ aspect-ratio: 1 / 1;
+
+ object-fit: cover;
 }
 
 .skills {

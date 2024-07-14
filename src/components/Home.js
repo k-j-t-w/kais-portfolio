@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Home.css'
 import Projects from './Projects';
 import StackIcon from "tech-stack-icons";
+import portrait from '../images/Portrait.jpg'
+
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 function Home({}) {
 
@@ -17,18 +37,34 @@ function Home({}) {
             </div>
           </div>
           <div className='home-socials'>
-            <div className='social'>Github</div>
-            <div className='social'>Linkedin</div>
-            <div className='social'>Email</div>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Github</div>
+            </a>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Linkedin</div>
+            </a>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Email</div>
+            </a>
           </div>
+          <FadeInSection>
           <h2 id='work'>Works</h2>
           <Projects/>
+          </FadeInSection>
+          <FadeInSection>
           <div className='about-cont'>
             <h2 id='about'>About</h2>
-            <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. From early beginnings, I've been immersed in the world behind screens, meticulously deconstructing designs and websites to uncover their craftsmanship.</div>
-            <div className='about-para'>For the past couple years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
-            <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games (such as elden ring and Valorant) or creating something (paintings, models, crafts, sculptures).</div>
+            <div className='about-content'> 
+            <img src={portrait} alt="Photo of Kai" className="portrait rounded-full w-96 h-96" />
+            <div>
+              <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. From early beginnings, I've been immersed in the world behind screens, meticulously deconstructing designs and websites to uncover their craftsmanship.</div>
+              <div className='about-para'>For the past couple years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
+              <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games (such as elden ring and Valorant) or creating something (paintings, models, crafts, sculptures).</div>
+            </div>
+            </div>
           </div>
+          </FadeInSection>
+          <FadeInSection>
           <h2 id='skills'>Skills</h2>
           <div className='skills'>
             <div className='skill'>
@@ -84,13 +120,22 @@ function Home({}) {
               <h3>Illustrator</h3>
             </div>
           </div>
+          </FadeInSection>
+          <FadeInSection>
           <h2 id='contact'>Contact Me</h2>
           <div>Feel free to contact me if you have any questions about me or my projects!</div>
           <div className='home-socials'>
-            <div className='social'>Github</div>
-            <div className='social'>Linkedin</div>
-            <div className='social'>Email</div>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Github</div>
+            </a>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Linkedin</div>
+            </a>
+            <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
+              <div className='social'>Email</div>
+            </a>
           </div>
+          </FadeInSection>
       </div>
           <div className='footer'> Developed by Kai Wingfield 2024</div>
     </div>
