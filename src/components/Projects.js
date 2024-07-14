@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
+import design from '../images/DowntimeTea2.jpg'
 
 const Tilt = ({ children }) => {
   const tiltRef = useRef(null);
@@ -70,16 +71,16 @@ const Projects = () => {
       </Tilt>
       <Tilt>
         <div className="project-content">
-          <img src={gunner} alt="Painting" className="project-img" />
-          <h1 className="project-title">Title</h1>
-          <div className="project-description">Description</div>
+          <img src={design} alt="Painting" className="project-img" />
+          <h1 className="project-title">Design Work</h1>
+          <div className="project-description">Various design work from the past years</div>
         </div>
       </Tilt>
       <Tilt>
         <div className="project-content">
           <img src={gunner} alt="Painting" className="project-img" />
-          <h1 className="project-title">Title</h1>
-          <div className="project-description">Description</div>
+          <h1 className="project-title">Paintings</h1>
+          <div className="project-description">A collection of my paintings</div>
         </div>
       </Tilt>
     </div>

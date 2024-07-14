@@ -16,7 +16,8 @@
   flex-basis: 450px; 
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(36, 36, 36);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(27, 27, 27) ;
   margin: 15px;
   flex-direction: column;
   border-radius: 10px;

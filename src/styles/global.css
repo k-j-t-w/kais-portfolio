@@ -10,5 +10,5 @@ html, body, p {
   
 
   html {
-    background-color: rgb(29, 29, 29);
+    background: linear-gradient(110.6deg, rgb(107, 81, 89) -18.3%, rgb(43, 35, 48) 16.4%, rgb(32, 33, 46) 68.2%, rgb(18, 15, 24) 99.1%);
   }

@@ -19,7 +19,8 @@
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: rgb(36, 36, 36);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(27, 27, 27) ;
   border-radius: 10px;
 }
 
@@ -42,14 +43,16 @@
   width: 250px;
   padding-bottom: 20px;
   margin-bottom: 150px;
+  
 }
 
 .social {
-  background-color: rgb(36, 36, 36);
   border-radius: 5px;
   padding-block: 5px;
   padding-inline: 10px;
   margin: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(27, 27, 27) ;
 }
 
 .about-para {
@@ -67,6 +70,7 @@
    display: flex;
    flex-wrap: wrap;
    margin-bottom: 150px;
+   justify-content: space-between;
 }
 
 .skill {
@@ -85,7 +89,7 @@
 
 .footer {
   display: flex;
-  background-color: rgb(46, 46, 46);
+  background-color: rgba(0, 0, 0, 0.2);
   justify-content: center;
   padding-block: 15px;
   letter-spacing: 0.8px;
