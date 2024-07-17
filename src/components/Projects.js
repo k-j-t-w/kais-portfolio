@@ -2,11 +2,92 @@ import React, { useRef, useEffect, useState } from 'react';
 import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
 import design from '../images/DowntimeTea2.jpg'
+import photolabs from '../images/photolabs-home.jpg'
+import photolabsTwo from '../images/photolabs-vertical-modal.jpg'
+import photolabsThree from '../images/photoLabs-wide-modal.jpg'
+import photolabsFour from '../images/photolabs-dark.jpg'
+import photolabsFive from '../images/photolabs-dark-vert.jpg'
+import githubLogo from '../images/github-mark-white.png'
 
-
-const dummy = () => {
+const codeProjectOne = () => {
   return (
-    <div>Testing the modal</div>
+    <div>
+        <h1 className='modal-title'>Photolabs</h1>
+        <div className='modal-desc'>A  react based site that displays photos and stores users favourites. Developed as part of my education at Lighthouse Labs</div>
+        <div>
+          <div className='modal-links'>
+            <a className='modal-link' href="https://github.com/k-j-t-w/photolab" target="_blank" rel="noopener noreferrer">
+              <img src={githubLogo} alt="Photolabs Landing Page" className="github-logo" />
+              <div>Github</div>
+            </a>
+          </div>
+        </div>
+        <div className='modal-skills'>
+          <div className='modal-skill'>React</div>
+          <div className='modal-skill'>Sass</div>
+          <div className='modal-skill'>Jest</div>
+        </div>
+      <div className='img-cont'>
+        <div className='additional-img'>
+        <div className='sub-img'>
+            <img src={photolabs} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsTwo} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsThree} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsFour} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsFive} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const codeProjectTwo = () => {
+  return (
+    <div>
+        <h1 className='modal-title'>Photolabs</h1>
+        <div className='modal-desc'>A  react based site that displays photos and stores users favourites. Developed as part of my education at Lighthouse Labs</div>
+        <div>
+          <div className='modal-links'>
+            <a className='modal-link' href="https://github.com/k-j-t-w/photolab" target="_blank" rel="noopener noreferrer">
+              <img src={githubLogo} alt="Photolabs Landing Page" className="github-logo" />
+              <div>Github</div>
+            </a>
+          </div>
+        </div>
+        <div className='modal-skills'>
+          <div className='modal-skill'>React</div>
+          <div className='modal-skill'>Sass</div>
+          <div className='modal-skill'>Jest</div>
+        </div>
+      <div className='img-cont'>
+        <div className='additional-img'>
+        <div className='sub-img'>
+            <img src={photolabs} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsTwo} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsThree} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsFour} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+          <div className='sub-img'>
+            <img src={photolabsFive} alt="Photolabs Landing Page" className="modal-img-sub" />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
@@ -65,17 +146,17 @@ const Projects = ({ openModal }) => {
     <div className="projects-cont">
 
       <Tilt>
-        <div className="project-content" onClick={() => openModal(dummy)} >
-          <img src={gunner} alt="Painting" className="project-img" />
-          <h1 className="project-title">Title</h1>
-          <div className="project-description">Description</div>
+        <div className="project-content" onClick={() => openModal(codeProjectOne)} >
+          <img src={photolabs} alt="Photolabs Landing Page" className="project-img" />
+          <h1 className="project-title">Photolabs</h1>
+          <div className="project-description">A React based photo app</div>
         </div>
       </Tilt>
       <Tilt>
-        <div className="project-content">
+        <div className="project-content" onClick={() => openModal(codeProjectTwo)}>
           <img src={gunner} alt="Painting" className="project-img" />
-          <h1 className="project-title">Title</h1>
-          <div className="project-description">Description</div>
+          <h1 className="project-title">Portfolio Prophet</h1>
+          <div className="project-description">A React based app that organizes stock data</div>
         </div>
       </Tilt>
       <Tilt>

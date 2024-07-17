@@ -51,3 +51,85 @@
   font-size: 20px;
   color: rgb(145, 145, 145);
 }
+
+/* Modal CSS */
+
+.modal-img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  height: 50vh;
+}
+
+.modal-img-sub {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+}
+
+.additional-img {
+  display: flex;
+  justify-content: space-between;
+  height: 1260px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.sub-img {
+  width: 48%;
+  max-height: 50px;
+
+}
+
+.github-logo {
+  object-fit: cover;
+  height: 15px;
+  padding-right: 5px;
+}
+
+.modal-links {
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.modal-link:hover {
+  border-bottom: 2px solid white;
+}
+
+.modal-title {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.modal-skills {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.modal-skill {
+  border-radius: 15px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.103);
+  margin-right: 20px;
+}
+
+.modal-desc {
+  font-size: 20px;
+  color: rgb(212, 212, 212);
+}

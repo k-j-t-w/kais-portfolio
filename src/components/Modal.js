@@ -1,28 +1,40 @@
-import React from "react";
-import '../styles/Modal.css'
+import React, { useEffect, useRef } from "react";
+import '../styles/Modal.css';
 
 const Modal = ({ isModalOpen, modalContent, onClose }) => {
-  if (isModalOpen !== true) {
+  const modalRef = useRef();
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isModalOpen]);
+
+  if (!isModalOpen) {
     return null;
   }
+
   return (
     <section className="modal">
-      <article className="modal-content p-lg-4">
-        <div className="exit-icon text-end" onClick={onClose}>X</div>
+      <article className="modal-content" ref={modalRef}>
         <main className="modal-mainContents">
-          <h5 className="modal-title">Title</h5>
-          <hr />
-          <div className="modal-image text-center mt-lg-2">
-
-          </div>
-          <p className="mt-lg-3 modalText">Content</p>
-          <div className="modal-button text-end">
-            <button>button</button>
-          </div>
+          {modalContent}
         </main>
       </article>
     </section>
   );
- };
- 
- export default Modal;
+};
+
+export default Modal;
