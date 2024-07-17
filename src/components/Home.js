@@ -123,7 +123,7 @@ function Home({ openModal }) {
           </FadeInSection>
           <FadeInSection>
           <h2 id='contact'>Contact Me</h2>
-          <div>Feel free to contact me if you have any questions about me or my projects!</div>
+          <div className='contact-blurb'>Feel free to contact me if you have any questions about me or my projects!</div>
           <div className='home-socials'>
             <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>
               <div className='social'>Github</div>

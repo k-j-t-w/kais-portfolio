@@ -95,8 +95,8 @@
 .about-content {
   display: flex;
   align-items: center;
-
 }
+
 .portrait {
  display: flex;
  border-radius: 10px;
@@ -107,6 +107,23 @@
 
  object-fit: cover;
 }
+
+@media only screen and (max-width: 900px) {
+  .about-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .portrait {
+    width: 50%;
+    padding-right: 0;
+    margin-bottom: 20px; /* Add margin to separate the image from the text */
+  }
+}
+
 
 .skills {
    display: flex;
@@ -155,7 +172,11 @@
   scroll-margin-top: 90px;
 }
 
-
+.contact-blurb {
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
 
 /* Text Animation */
 .home-blurb .type {
