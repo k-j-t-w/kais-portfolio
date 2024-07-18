@@ -4,7 +4,7 @@ import portTwo from '../images/register.jpg'
 import portThree from '../images/search-result.jpg'
 
 
-const CodeProjectTwo = () => {
+const CodeProjectTwo = ({ openLightbox }) => {
   const codeProjectTwoImages = [port, portTwo, portThree]
 
   return (
@@ -28,13 +28,13 @@ const CodeProjectTwo = () => {
         </div>
       <div className='img-cont'>
         <div className='additional-img'>
-        <div className='sub-img'>
+        <div className='sub-img' key='0' onClick={() => openLightbox(codeProjectTwoImages, 0)}>
             <img src={port} alt="Portfolio Prophets stock page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='1' onClick={() => openLightbox(codeProjectTwoImages, 1)}>
             <img src={portTwo} alt="Portfolio Prophets register page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='2' onClick={() => openLightbox(codeProjectTwoImages, 2)}>
             <img src={portThree} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
         </div>

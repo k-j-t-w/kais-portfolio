@@ -23,7 +23,7 @@ function FadeInSection(props) {
   );
 }
 
-function Home({ openModal }) {
+function Home({ openModal, openLightbox }) {
 
   return (
     <div className='home-cont'>
@@ -49,7 +49,7 @@ function Home({ openModal }) {
           </div>
           <FadeInSection>
           <h2 id='work'>Works</h2>
-          <Projects openModal={openModal}/>
+          <Projects openModal={openModal} openLightbox={openLightbox}/>
           </FadeInSection>
           <FadeInSection>
           <div className='about-cont'>

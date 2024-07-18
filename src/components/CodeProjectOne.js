@@ -5,7 +5,7 @@ import photolabsFour from '../images/photolabs-dark.jpg'
 import photolabsFive from '../images/photolabs-dark-vert.jpg'
 import githubLogo from '../images/github-mark-white.png'
 
-const CodeProjectOne = () => {
+const CodeProjectOne = ({ openLightbox }) => {
   const codeProjectOneImages = [photolabs, photolabsTwo, photolabsThree, photolabsFour, photolabsFive]
 
 
@@ -28,19 +28,19 @@ const CodeProjectOne = () => {
         </div>
       <div className='img-cont'>
         <div className='additional-img'>
-        <div className='sub-img' >
+        <div className='sub-img' key='0' onClick={() => openLightbox(codeProjectOneImages, 0)} >
             <img src={photolabs} alt="Photolabs Landing Page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='1' onClick={() => openLightbox(codeProjectOneImages, 1)}>
             <img src={photolabsTwo} alt="Photolabs Vertical modal" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='2' onClick={() => openLightbox(codeProjectOneImages, 2)}>
             <img src={photolabsThree} alt="Photolabs Horizontal modal" className="modal-img-sub" />
           </div>
-          <div className='sub-img' >
+          <div className='sub-img' key='3' onClick={() => openLightbox(codeProjectOneImages, 3)}>
             <img src={photolabsFour} alt="Photolabs dark horizontal modal" className="modal-img-sub" />
           </div>
-          <div className='sub-img' >
+          <div className='sub-img' key='4' onClick={() => openLightbox(codeProjectOneImages, 4)}>
             <img src={photolabsFive} alt="Photolabs dark vertical modal" className="modal-img-sub" />
           </div>
         </div>

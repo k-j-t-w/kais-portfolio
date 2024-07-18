@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import '../styles/Modal.css';
 
-const Modal = ({ isModalOpen, modalContent, onClose }) => {
+const Modal = ({ isModalOpen, modalContent, onClose, isLightboxOpen }) => {
   const modalRef = useRef();
 
   const handleClickOutside = (event) => {
@@ -11,7 +11,7 @@ const Modal = ({ isModalOpen, modalContent, onClose }) => {
   };
 
   useEffect(() => {
-    if (isModalOpen) {
+    if (isModalOpen && !isLightboxOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -20,7 +20,7 @@ const Modal = ({ isModalOpen, modalContent, onClose }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, isLightboxOpen]);
 
   if (!isModalOpen) {
     return null;

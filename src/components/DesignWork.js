@@ -10,7 +10,7 @@ import design10 from '../images/Menu1.jpg'
 import design11 from '../images/Menu2.jpg'
 
 
-const DesignWork = () => {
+const DesignWork = ({ openLightbox }) => {
   const designWorkImages = [ design, design3, design4, design5, design6, design7, design8, design9, design10, design11]
   return (
     <div>
@@ -26,34 +26,34 @@ const DesignWork = () => {
         </div>
       <div className='img-cont'>
         <div className='additional-img'>
-        <div className='sub-img'>
+        <div className='sub-img' key='0' onClick={() => openLightbox(designWorkImages, 0)}>
             <img src={design} alt="Portfolio Prophets stock page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='1' onClick={() => openLightbox(designWorkImages, 1)}>
             <img src={design3} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='2' onClick={() => openLightbox(designWorkImages, 2)}>
             <img src={design4} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='3' onClick={() => openLightbox(designWorkImages, 3)}>
             <img src={design5} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='4' onClick={() => openLightbox(designWorkImages, 4)}>
             <img src={design6} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='5' onClick={() => openLightbox(designWorkImages, 5)}>
             <img src={design7} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='6' onClick={() => openLightbox(designWorkImages, 6)}>
             <img src={design8} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='7' onClick={() => openLightbox(designWorkImages, 7)}>
             <img src={design9} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='8' onClick={() => openLightbox(designWorkImages, 8)}>
             <img src={design10} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
-          <div className='sub-img'>
+          <div className='sub-img' key='9' onClick={() => openLightbox(designWorkImages, 9)}>
             <img src={design11} alt="Portfolio Prophets search result page" className="modal-img-sub" />
           </div>
         </div>

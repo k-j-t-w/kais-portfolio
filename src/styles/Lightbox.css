@@ -1,0 +1,38 @@
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.877);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+ }
+
+ .lightbox-content {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+ }
+
+ .lightbox-img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 90vh;
+  border: 1px solid white;
+ }
+
+ .prev-icon {
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+ }
+
+ .next-icon {
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+ }
