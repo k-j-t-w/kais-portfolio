@@ -3,6 +3,7 @@ import '../styles/Home.css'
 import Projects from './Projects';
 import StackIcon from "tech-stack-icons";
 import portrait from '../images/Portrait.jpg'
+import logo from '../images/logo-white.png'
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -28,6 +29,9 @@ function Home({ openModal, openLightbox }) {
   return (
     <div className='home-cont'>
       <div className='home'>
+        <div className='logo-cont'>
+          <img src={logo} alt="Logo" className="logo-img-top"></img>
+        </div>  
           <div className='home-blurb'>
             <div className='type'>
               <div className='blurb1'>Hi, I'm Kai,</div>
@@ -35,6 +39,7 @@ function Home({ openModal, openLightbox }) {
               <div className='blurb3'>and designer</div>
               <div className='blurb4'>based in Victoria B.C.</div>
             </div>
+            <img src={logo} alt="Logo" className="logo-img"></img>
           </div>
           <div className='home-socials'>
             <a href="https://github.com/k-j-t-w" target="_blank" rel="noopener noreferrer" className='link'>

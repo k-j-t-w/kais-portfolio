@@ -40,11 +40,11 @@ function TopNav() {
           </a>
         </div>
 
-        <div className={`menu-dropdown ${dropdownOpen ? 'menu-active' : ''}`} onClick={toggleDropdown}>
+        <div className={`menu-dropdown ${dropdownOpen ? 'menu-active' : ''}`} onClick={toggleDropdown} >
           <div className="col">
             <div className="con">
               <button className="dropbtn">
-                <FontAwesomeIcon icon={faBars} size="lg" />
+                <FontAwesomeIcon icon={faBars} size="m" />
               </button>
             </div>
           </div>

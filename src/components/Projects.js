@@ -69,28 +69,28 @@ const Projects = ({ openModal, openLightbox }) => {
         <div className="project-content" onClick={() => openModal(<CodeProjectOne openLightbox={openLightbox}/>)} >
           <img src={photolabs} alt="Photolabs Landing Page" className="project-img" />
           <h1 className="project-title">Photolabs</h1>
-          <div className="project-description">A React based photo app</div>
+          {/* <div className="project-description">A React based photo app</div> */}
         </div>
       </Tilt>
       <Tilt>
         <div className="project-content" onClick={() => openModal(<CodeProjectTwo openLightbox={openLightbox}/>)}>
           <img src={port} alt="Portfolio Prophet" className="project-img" />
           <h1 className="project-title">Portfolio Prophet</h1>
-          <div className="project-description">A React based app that organizes stock data</div>
+          {/* <div className="project-description">A React based app that organizes stock data</div> */}
         </div>
       </Tilt>
       <Tilt>
         <div className="project-content">
           <img src={design} alt="Design" className="project-img" onClick={() => openModal(<DesignWork openLightbox={openLightbox}/>)} />
           <h1 className="project-title">Design Work</h1>
-          <div className="project-description">Various design work from the past years</div>
+          {/* <div className="project-description">Various design work from the past years</div> */}
         </div>
       </Tilt>
       <Tilt>
         <div className="project-content">
           <img src={gunner} alt="Painting" className="project-img" onClick={() => openModal(<Paintings openLightbox={openLightbox}/>)}/>
           <h1 className="project-title">Paintings</h1>
-          <div className="project-description">A collection of my paintings</div>
+          {/* <div className="project-description">A collection of my paintings</div> */}
         </div>
       </Tilt>
     </div>

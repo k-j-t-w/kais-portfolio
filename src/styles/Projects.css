@@ -1,6 +1,8 @@
 .projects-cont {
   display: flex;
+  position: relative;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
@@ -13,52 +15,69 @@
   height: 600px;
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 450px; 
+  flex-basis: 450px;
   display: flex;
-  flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.24);
-  border: 1px solid rgb(27, 27, 27) ;
+  border: 1px solid rgb(27, 27, 27);
   margin: 20px;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.3s,
+  transition: 0.3s;
 }
 
 .project:hover {
-  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  filter: brightness(50%);
+  filter: brightness(90%);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .project-img {
   object-fit: cover;
   width: 100%;
-  height: 520px; 
+  height: 100%;
+  filter: brightness(30%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  position: absolute;
 }
 
-
 .project-title {
-  margin: 0;
-  margin-left: 20px;
-  margin-top: 10px
-  
+  text-align: center;
+  position: absolute;
+  font-size: 40px;
+  width: 400px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
 }
 
 @media only screen and (max-width: 700px) {
   .project {
     min-width: 300px;
     flex-basis: 300px;
-    height: 400px
+    height: 300px;
   }
 
   .project-img {
-    height: 300px
+    height: 300px;
   }
+
   .project-title {
-    font-size: 30px;
+    font-size: 24px;
+    width: 250px;
   }
 }
 
@@ -68,15 +87,6 @@
     flex-basis: 200px;
   }
 }
-
-
-.project-description {
-  margin-left: 20px;
-  font-size: 20px;
-  color: rgb(145, 145, 145);
-}
-
-/* Modal CSS */
 
 .modal-img {
   object-fit: cover;
@@ -94,8 +104,9 @@
   margin-bottom: 20px;
   transition: 0.3s;
 }
+
 .modal-img-sub:hover {
-  filter: brightness(65%)
+  filter: brightness(65%);
 }
 
 .additional-img {
@@ -115,7 +126,6 @@
 .sub-img {
   width: 48%;
   cursor: pointer;
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -158,7 +168,8 @@
 
 .modal-skills {
   display: flex;
-  margin-block: 20px;
+  margin-block: 10px;
+  flex-wrap: wrap;
 }
 
 .modal-skill {
@@ -168,10 +179,17 @@
   color: rgb(255, 255, 255);
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.103);
+  margin-block: 10px;
   margin-right: 20px;
 }
 
 .modal-desc {
   font-size: 20px;
   color: rgb(212, 212, 212);
+}
+
+@media only screen and (max-width: 900px) {
+  .modal-desc {
+    font-size: 16px;
+  }
 }
