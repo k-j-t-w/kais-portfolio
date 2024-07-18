@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import '../styles/Lightbox.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Lightbox = ({ isLightboxOpen, lightboxImages, closeLightbox, lightboxIndex, setLightboxIndex }) => {
   const prevImage = () => {
@@ -42,13 +44,13 @@ const Lightbox = ({ isLightboxOpen, lightboxImages, closeLightbox, lightboxIndex
 
   return (
     <section className="lightbox">
-      <div className='prev-icon' onClick={prevImage} ref={prevIconRef}>&#x23F4;</div>
+      <div className='prev-icon' onClick={prevImage} ref={prevIconRef}><FontAwesomeIcon icon={faCaretLeft} /></div>
       <div className='lightbox-content' >
         <div className='img-wrapper'>
         <img className='lightbox-img' src={lightboxImages[lightboxIndex]} alt="Lightbox content" ref={lightboxContentRef} />
         </div>
       </div>
-      <div className='next-icon' onClick={nextImage} ref={nextIconRef}>&#x23F5;</div>
+      <div className='next-icon' onClick={nextImage} ref={nextIconRef}><FontAwesomeIcon icon={faCaretRight} /></div>
     </section>
   );
 };
