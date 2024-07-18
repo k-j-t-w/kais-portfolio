@@ -5,7 +5,7 @@
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background-color: rgb(29, 29, 29, 0.7);
+  background-color: rgba(29, 29, 29, 0.7);
 }
 
 .top-nav-span {
@@ -18,23 +18,22 @@
   max-width: 1300px;
   flex-grow: 1;
   border-bottom: 1px solid rgb(19, 19, 19);
-
-
 }
 
 .top-nav-items {
   display: flex;
-
 }
 
 .top-nav-item {
   padding: 10px;
-  transition: 0.2s;
   border-radius: 5px;
-  position: static;
-  font-size: 16px; 
+  font-size: 16px;
   cursor: pointer;
-  
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  line-height: 20px;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .top-nav-item:hover {
@@ -42,13 +41,110 @@
   transform: scale(1.1);
 }
 
-.top-nav-item {
-  display: inline-block; /* Ensure inline-block for consistent width */
-  width: 60px; /* Adjust width as needed */
-  text-align: center; /* Center align text */
-  line-height: 20px; 
-}
-
 .link {
   color: #fffcec;
+}
+
+.menu-dropdown {
+  height: 50px;
+  width: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end; /* Align button to the right */
+  justify-content: flex-start; /* Align button to the top */
+  background-color: #2a3b4900;
+  border-radius: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  z-index: 1000;
+
+  .dropbtn {
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    padding-right: 11px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: inherit;
+  }
+
+  .menu-content {
+    background: transparent;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center menu items horizontally */
+    justify-content: center; /* Center menu items vertically */
+    position: absolute;
+    right: 0;
+    width: 160px; /* Adjust width as needed */
+    max-height: 300px; /* Limit max height for scrolling */
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 60px;
+    z-index: 1000; /* Ensure dropdown is above other content */
+  }
+
+  &.menu-active {
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    border: 1px solid rgb(85, 85, 85);
+
+
+    .menu-content {
+      opacity: 1;
+      pointer-events: auto;
+      transition: .7s ease;
+      transition-delay: .3s;
+    }
+  }
+}
+
+.menu-content ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition-delay: .5s;
+}
+
+.menu-content li {
+  font-size: 30px;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  transition: color 0.5s ease;
+  cursor: pointer;
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  .top-nav-items {
+    display: none;
+  }
+
+  .menu-dropdown {
+    display: flex; /* Ensures the dropdown icon is visible on small screens */
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .top-nav-items {
+    display: none;
+  }
+
+  .menu-dropdown {
+    display: flex; /* Ensures the dropdown icon is visible on small screens */
+  }
 }

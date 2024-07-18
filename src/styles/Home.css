@@ -45,14 +45,11 @@
 @media only screen and (max-width: 900px) {
   .home-blurb {
     font-size: 45px;
+    margin-top: 100px;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .home-blurb {
-    font-size: 35px;
-  }
-}
+
 
 
 .home-socials {
@@ -61,9 +58,23 @@
   width: 250px;
   padding-bottom: 20px;
   margin-bottom: 150px;
-  
-  
 }
+
+@media only screen and (max-width: 700px) {
+  .home-blurb {
+    font-size: 30px;
+  }
+  .home-socials {
+    margin-bottom: 75px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-blurb {
+    font-size: 20px;
+  }
+}
+
 
 .social {
   border-radius: 5px;
@@ -145,6 +156,14 @@
   width: 70px; /* Set the width */
   height: 70px; /* Set the height */
 }
+
+@media only screen and (max-width: 700px) {
+  .skill {
+    padding: 40px;
+    font-size: 12px;
+  }
+}
+
 
 .footer {
   display: flex;

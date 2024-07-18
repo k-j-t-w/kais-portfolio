@@ -44,7 +44,9 @@ const Lightbox = ({ isLightboxOpen, lightboxImages, closeLightbox, lightboxIndex
     <section className="lightbox">
       <div className='prev-icon' onClick={prevImage} ref={prevIconRef}>&#x23F4;</div>
       <div className='lightbox-content' >
+        <div className='img-wrapper'>
         <img className='lightbox-img' src={lightboxImages[lightboxIndex]} alt="Lightbox content" ref={lightboxContentRef} />
+        </div>
       </div>
       <div className='next-icon' onClick={nextImage} ref={nextIconRef}>&#x23F5;</div>
     </section>

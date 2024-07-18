@@ -22,7 +22,7 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s,
+  transition: 0.3s,
 }
 
 .project:hover {
@@ -30,7 +30,6 @@
   cursor: pointer;
   filter: brightness(50%);
 }
-
 
 .project-img {
   object-fit: cover;
@@ -40,12 +39,36 @@
   border-top-right-radius: 10px;
 }
 
+
 .project-title {
   margin: 0;
   margin-left: 20px;
   margin-top: 10px
-
+  
 }
+
+@media only screen and (max-width: 700px) {
+  .project {
+    min-width: 300px;
+    flex-basis: 300px;
+    height: 400px
+  }
+
+  .project-img {
+    height: 300px
+  }
+  .project-title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .project {
+    min-width: 200px;
+    flex-basis: 200px;
+  }
+}
+
 
 .project-description {
   margin-left: 20px;

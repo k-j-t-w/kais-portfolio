@@ -16,11 +16,21 @@
   justify-content: center;
   width: 90vw;
   height: 90vh;
+  align-items: center;
  }
 
+ .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
  .lightbox-img {
-  object-fit: cover;
-  max-width: 100%;
+  object-fit: contain;
+  max-width: 80vw;
   max-height: 90vh;
   border: 1px solid white;
  }
