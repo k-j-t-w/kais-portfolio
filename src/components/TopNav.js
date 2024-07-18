@@ -44,7 +44,7 @@ function TopNav() {
           <div className="col">
             <div className="con">
               <button className="dropbtn">
-                <FontAwesomeIcon icon={faBars} size="m" />
+                <FontAwesomeIcon icon={faBars} />
               </button>
             </div>
           </div>

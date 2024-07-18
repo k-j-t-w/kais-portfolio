@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import '../styles/Home.css'
 import Projects from './Projects';
 import StackIcon from "tech-stack-icons";

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
 import design from '../images/DowntimeTea2.jpg'
