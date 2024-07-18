@@ -62,7 +62,7 @@ function Home({ openModal, openLightbox }) {
             <div className='about-content'> 
             <img src={portrait} alt="Photo of Kai" className="portrait rounded-full w-96 h-96" />
             <div>
-              <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. From early beginnings, I've been immersed in the world behind screens, meticulously deconstructing designs and websites to uncover their craftsmanship.</div>
+              <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. I’m constantly immersed in the world behind the screen; creating, coding, deconstructing, and solving complex problems one line of code at a time.</div>
               <div className='about-para'>For the past couple years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
               <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games (such as elden ring and Valorant) or creating something (paintings, models, crafts, sculptures).</div>
             </div>
@@ -142,7 +142,7 @@ function Home({ openModal, openLightbox }) {
           </div>
           </FadeInSection>
       </div>
-          <div className='footer'> Developed by Kai Wingfield 2024</div>
+          <div className='footer'>Kai Wingfield 2024</div>
     </div>
   )
 }
