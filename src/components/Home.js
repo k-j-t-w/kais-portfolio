@@ -85,6 +85,18 @@ function Home({ openModal, openLightbox }) {
               <h3>Javascript</h3>
             </div>
             <div className='skill'>
+              <StackIcon name="typescript" className="icon"/>
+              <h3>Typescript</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="css3" className="icon"/>
+              <h3>Css3</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="html5" className="icon"/>
+              <h3>Html5</h3>
+            </div>
+            <div className='skill'>
               <StackIcon name="postgresql" className="icon"/>
               <h3>PostgreSQL</h3>
             </div>
@@ -105,10 +117,6 @@ function Home({ openModal, openLightbox }) {
               <h3>npm</h3>
             </div>
             <div className='skill'>
-              <StackIcon name="ps" className="icon"/>
-              <h3>Photoshop</h3>
-            </div>
-            <div className='skill'>
               <StackIcon name="ruby" className="icon"/>
               <h3>Ruby</h3>
             </div>
@@ -123,6 +131,10 @@ function Home({ openModal, openLightbox }) {
             <div className='skill'>
               <StackIcon name="ai" className="icon"/>
               <h3>Illustrator</h3>
+            </div>
+            <div className='skill'>
+              <StackIcon name="ps" className="icon"/>
+              <h3>Photoshop</h3>
             </div>
           </div>
           </FadeInSection>
