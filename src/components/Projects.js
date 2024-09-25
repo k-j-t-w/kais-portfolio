@@ -3,10 +3,12 @@ import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
 import design from '../images/DowntimeTea2.jpg'
 import photolabs from '../images/photolabs-home.jpg'
+import chess from '../images/Opening.png'
 import port from '../images/stock-analysis.png'
 
 import CodeProjectOne from './CodeProjectOne';
 import CodeProjectTwo from './CodeProjectTwo';
+import CodeProjectThree from './CodeProjectThree';
 import DesignWork from './DesignWork';
 import Paintings from './Paintings';
 
@@ -65,6 +67,13 @@ const Projects = ({ openModal, openLightbox }) => {
   return (
     <div className="projects-cont">
 
+      <Tilt>
+        <div className="project-content" onClick={() => openModal(<CodeProjectThree openLightbox={openLightbox}/>)} >
+          <img src={chess} alt="Scotch Gambit" className="project-img" />
+          <h1 className="project-title">Chess App</h1>
+          {/* <div className="project-description">A React based chess app</div> */}
+        </div>
+      </Tilt>
       <Tilt>
         <div className="project-content" onClick={() => openModal(<CodeProjectOne openLightbox={openLightbox}/>)} >
           <img src={photolabs} alt="Photolabs Landing Page" className="project-img" />

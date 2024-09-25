@@ -15,7 +15,7 @@ const CodeProjectTwo = ({ openLightbox }) => {
           <div className='modal-links'>
             <a className='modal-link' href="https://github.com/k-j-t-w/Final_Project" target="_blank" rel="noopener noreferrer">
               <img src={githubLogo} alt="github logo" className="github-logo" />
-              <div>Github</div>
+              <div>GITHUB</div>
             </a>
           </div>
         </div>
