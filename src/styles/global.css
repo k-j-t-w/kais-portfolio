@@ -10,6 +10,6 @@ html, body, p {
   
 
   html {
-    background: linear-gradient(110.6deg, rgb(47, 58, 65) -18.3%, rgb(40, 52, 56) 16.4%, rgb(26, 30, 37) 68.2%, rgb(17, 19, 27) 99.1%);
+    background: linear-gradient(110.6deg, #393E46 -18.3%, #222831 16.4%, #222831 68.2%, #1a1f24 99.1%);
     scrollbar-color: rgb(65, 65, 65) rgb(27, 27, 27);
   }

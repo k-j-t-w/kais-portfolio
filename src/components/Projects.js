@@ -3,12 +3,14 @@ import '../styles/Projects.css';
 import gunner from '../images/Gunner.jpg';
 import design from '../images/DowntimeTea2.jpg'
 import photolabs from '../images/photolabs-home.jpg'
+import et from '../images/et2.png'
 import chess from '../images/Opening.png'
 import port from '../images/stock-analysis.png'
 
 import CodeProjectOne from './CodeProjectOne';
 import CodeProjectTwo from './CodeProjectTwo';
 import CodeProjectThree from './CodeProjectThree';
+import CodeProjectFour from './CodeProjectFour';
 import DesignWork from './DesignWork';
 import Paintings from './Paintings';
 
@@ -67,6 +69,13 @@ const Projects = ({ openModal, openLightbox }) => {
   return (
     <div className="projects-cont">
 
+      <Tilt>
+        <div className="project-content" onClick={() => openModal(<CodeProjectFour openLightbox={openLightbox}/>)} >
+          <img src={et} alt="Expense trend site" className="project-img" />
+          <h1 className="project-title">Expense Trend</h1>
+          
+        </div>
+      </Tilt>
       <Tilt>
         <div className="project-content" onClick={() => openModal(<CodeProjectThree openLightbox={openLightbox}/>)} >
           <img src={chess} alt="Scotch Gambit" className="project-img" />
