@@ -36,7 +36,7 @@ function Home({ openModal, openLightbox }) {
             <div className='type'>
               <div className='blurb1'>Hi, I'm Kai,</div>
               <div className='blurb2'>a full stack developer</div>
-              <div className='blurb3'>and designer</div>
+              <div className='blurb3'>and graphic designer</div>
               <div className='blurb4'>based in Victoria B.C.</div>
             </div>
             <img src={logo} alt="Logo" className="logo-img"></img>
@@ -64,7 +64,7 @@ function Home({ openModal, openLightbox }) {
             <div>
               <div className='about-para'>With a diploma in web development, a certificate in graphic design, and a background rooted in the art and print industry, my passion for design and technology has been a lifelong pursuit. I’m constantly immersed in the world behind the screen; creating, coding, deconstructing, and solving complex problems one line of code at a time.</div>
               <div className='about-para'>For the past couple years, I have dedicated myself to full-time web development, collaborating with diverse clients and projects that continually expand my skill set. I prioritize honesty and transparency in my work, finding fulfillment in partnering with like-minded companies and teams to build exceptional digital products.</div>
-              <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games (such as elden ring and Valorant) or creating something (paintings, models, crafts, sculptures).</div>
+              <div className='about-para'>In my free time, if I’m not coding, you can find me exploring nature on Vancouver Island (I’m big on hiking and swimming), playing video games or creating something (paintings, models, crafts, sculptures).</div>
             </div>
             </div>
           </div>
